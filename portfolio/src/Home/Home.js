@@ -8,10 +8,19 @@ export default function Home() {
     history.push("/about_me");
   };
 
+  const toProject = () => {
+    history.push("/projects");
+  };
+
   return (
     <div className="Home">
-      <h1>Do you want to meet your next Full-Stack developer?</h1>
-      <button onClick={handleClick}>Sure</button>
+      <h1>Hello. I'm Ruaa AlSugheir</h1>
+      <p>
+        I am an passionate full-stack developer who loves making functional
+        and visually pleasing websites.
+      </p>
+      <button onClick={toProject}>My projects</button>
+      <button onClick={handleClick}>View professional profile</button>
     </div>
   );
 }
