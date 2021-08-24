@@ -16,11 +16,12 @@ export default function Home() {
     <div className="Home">
       <h1>Hello. I'm Ruaa AlSugheir</h1>
       <p>
-        I am an passionate full-stack developer who loves making functional
-        and visually pleasing websites.
+        I am an passionate full-stack developer who loves learning new
+        technologies,
       </p>
+      <p>and making visually pleasing applications.</p>
       <button onClick={toProject}>My projects</button>
-      <button onClick={handleClick}>View professional profile</button>
+      <button onClick={handleClick}>My profile</button>
     </div>
   );
 }
