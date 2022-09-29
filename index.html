@@ -4,54 +4,95 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="style.css" />
     <title>Roaa AlSughair</title>
   </head>
   <body>
-    <!-- 
-        How I want my portfolio to be:
-        1- It must be a single page
-        2- Must contain a download resume option in About or Home
-        3- I'd like it to contain a LinkedIn badge
-        4- It consists of five components: Home, About, Works, Exp & Skills, and Contact.
-        5- Functionality... ?
-        6- Color palette... ?
-        7- Font style... ?
-        8- A Logo can be used in much later versions
-        9- Light/Dark mode?
-        10- Should the nav be horizontal or aside?
-        11- Back to top button? If yes, try to use an icon that goes to top other than arrows (E.g. rocket)
-        ...
-    -->
-    <section>
-        <!-- Should have a background image (Outer Space) -->
+    <nav class="d-flex flex-row-reverse p-x-2 p-y-1 gap-3">
+      <a href="#about">About</a>
+      <a href="#works">Works</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <main
+      class="d-flex flex-column align-items-center justify-content-center p-x-2"
+    >
+      <section
+        class="hero d-flex flex-column gap-3 align-items-center justify-content-center"
+      >
         <h1>Home</h1>
-    </section>
-    <header>
-      <nav>
-        <a>Regarding Me</a>
-        <a>Works</a>
-        <a>Experience</a>
-        <a>Contact</a>
-      </nav>
-    </header>
-    <main>
-      <section>
-        <section>About
-            <article>
-            <img/>
-            <p></p>
-            </article>
-        </section>
-        <section>Skills</section>
+        <a href="#projects">
+          <button class="p-x-2 p-y-1">Show Me</button>
+        </a>
       </section>
-      <section>
+
+      <section
+        id="about"
+        class="d-flex flex-column gap-3 align-items-center justify-content-center"
+      >
+        <div>
+          <article
+            class="d-flex flex-column gap-3 align-items-center justify-content-center"
+          >
+            <h2>Who Am I</h2>
+            <img />
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Consequatur neque ullam natus, quidem voluptas nisi quaerat aut
+              asperiores iure quisquam ea nulla in corporis ipsum laborum animi
+              deleniti necessitatibus voluptates?
+            </p>
+            <button class="p-x-2 p-y-1">Download Resume</button>
+          </article>
+        </div>
+        <article
+          class="d-flex flex-column gap-3 align-items-center justify-content-center"
+        >
+          <h2>Skills</h2>
+          <!-- Technical, Industry Knowledge, and Interpersonal Skills -->
+        </article>
+      </section>
+      <section
+        id="works"
+        class="d-flex flex-column gap-3 align-items-center justify-content-center"
+      >
+        <h2>Works</h2>
         <!-- Use a 2-columns grid to display projects -->
-        Works
+        <div class="projects d-grid grid-cols-2 gap-3">
+          <div>project one</div>
+          <div>project two</div>
+        </div>
       </section>
-      <section>Exp</section>
-      <section>Contact</section>
+      <section
+        id="contact"
+        class="d-flex flex-column gap-3 align-items-center justify-content-center"
+      >
+        <h2>Contact</h2>
+        <p>
+          Want to talk with me over web development? Here's how you can get in
+          touch with me.
+        </p>
+        <div
+          class="d-flex flex-column gap-3 align-items-center justify-content-center"
+        >
+          <h4>Email</h4>
+          <a href="mailto:roaa.alsughair0@gmail.com"
+            ><button class="p-x-2 p-y-1">Send me an email</button></a
+          >
+        </div>
+        <div>
+          <h4>LinkedIn</h4>
+          <!-- Create a clone of the linkedin badge -->
+        </div>
+      </section>
     </main>
-    <footer>Footer</footer>
+    <!-- Make the copyright date static for versioning -->
+    <footer class="text-center p-y-1">Roa'a AlSughair &copy;2022</footer>
   </body>
 </html>
