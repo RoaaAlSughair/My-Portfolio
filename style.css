@@ -41,10 +41,16 @@ button {
   background-color: #fdb827;
   color: #23120b;
   border: none;
+  box-shadow: 1px 1px 2px #23120b;
 }
 
 button:hover {
   cursor: pointer;
+}
+
+strong p {
+  font-size: 2rem;
+  color: #23120b;
 }
 
 h1,
@@ -53,6 +59,17 @@ h3,
 h4 {
   color: #23120b;
   font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 4rem;
+  color: #fdb827;
+  text-shadow: 1px 1px #23120b;
+}
+
+.bg-white {
+  background-color: white;
 }
 
 .d-flex {
@@ -90,6 +107,11 @@ h4 {
 .p-y-1 {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.p-x-1 {
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
 
 .p-x-2 {
