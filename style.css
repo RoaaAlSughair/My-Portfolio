@@ -10,12 +10,6 @@ html {
 
 body {
   font-family: "Crimson Text", serif;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
-body::-webkit-scrollbar {
-  display: none;
 }
 
 nav {
@@ -38,14 +32,15 @@ a:hover {
 }
 
 button {
-  background-color: #fdb827;
-  color: #23120b;
+  background-color: #23120b;
+  color: white;
   border: none;
-  box-shadow: 1px 1px 2px #23120b;
+  box-shadow: 1px 1px 2px #fdb827;
 }
 
 button:hover {
   cursor: pointer;
+  color: #fdb827;
 }
 
 strong p {
@@ -92,11 +87,15 @@ h1 {
   justify-content: center;
 }
 
+.justify-content-end {
+  justify-content: flex-end;
+}
+
 .align-items-center {
   align-items: center;
 }
 
-.grid-cols-2 {
+.projects {
   grid-template-columns: 1fr 1fr;
 }
 

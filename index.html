@@ -15,7 +15,7 @@
     <title>Roaa AlSughair</title>
   </head>
   <body>
-    <nav class="d-flex flex-row-reverse p-x-2 p-y-1 gap-3">
+    <nav class="d-flex flex-row justify-content-end p-x-2 p-y-1 gap-3">
       <a href="#about">About</a>
       <a href="#works">Works</a>
       <a href="#contact">Contact</a>
@@ -26,22 +26,14 @@
       <section
         class="hero d-flex flex-column gap-3 align-items-center justify-content-center"
       >
-        <strong><p>Hi, I'm</p></strong>
+        <b><p>Hi, I'm</p></b>
         <h1>Roa'a AlSughair</h1>
-        <strong><p>and I'm a</p></strong>
+        <b><p>and I'm a</p></b>
         <h1>Full-Stack Developer</h1>
-        <a href="#projects">
+        <a href="#works">
           <button class="p-x-2 p-y-1">Show Me</button>
         </a>
       </section>
-      <aside
-        class="bg-white p-x-1 p-y-1 d-flex flex-column gap-3 align-items-center justify-content-center"
-      >
-        <div><h4>Table of Contents</h4></div>
-        <a href="#about">About</a>
-        <a href="#works">Works</a>
-        <a href="#contact">Contact</a>
-      </aside>
       <section
         id="about"
         class="d-flex flex-column gap-3 align-items-center justify-content-center"
@@ -50,15 +42,17 @@
           <article
             class="d-flex flex-column gap-3 align-items-center justify-content-center"
           >
-            <h2>Who Am I</h2>
-            <img />
+            <h2>About Me</h2>
+            <img src="./assets/My Img-1.png" height="150" width="150" />
             <p>
               I am a full-stack developer. I enjoy building web applications
               that implement back-end front-end, and database technologies. I
               seek job opportunities where I can improve and sharpen my skills
               to reach greater levels of proficiency in my field.
             </p>
-            <button class="p-x-2 p-y-1">Download Resume</button>
+            <a href="./assets/Roa'a AlSughair.pdf" download=""
+              ><button class="p-x-2 p-y-1">Download Resume</button></a
+            >
           </article>
         </div>
         <article
@@ -66,6 +60,21 @@
         >
           <h2>Skills</h2>
           <!-- Technical, Industry Knowledge, and Interpersonal Skills -->
+          <ul>
+            <li>JavaScript, PHP</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>OOP, MVC pattern</li>
+            <li>MongoDB, MySQL</li>
+            <li>Node.js, Express.js</li>
+            <li>jQuery, React.js, Redux.js</li>
+            <li>Bootstrap, Material-UI</li>
+            <li>WordPress</li>
+            <li>Code Debug</li>
+            <li>Problem Solving</li>
+            <li>Attention to Details</li>
+            <li>Teamwork</li>
+          </ul>
         </article>
       </section>
       <section
@@ -74,9 +83,35 @@
       >
         <h2>Works</h2>
         <!-- Use a 2-columns grid to display projects -->
-        <div class="projects d-grid grid-cols-2 gap-3">
-          <div class="bg-white p-x-1 p-y-1">project one</div>
-          <div class="bg-white p-x-1 p-y-1">project two</div>
+        <div class="projects d-grid gap-3">
+          <div class="bg-white p-x-1 p-y-1">
+            <img src="https://via.placeholder.com/300" />
+            <h3>project one</h3>
+            <ul>
+              <li><a href="#">Live</a></li>
+              <li><a href="#">Repo</a></li>
+            </ul>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatum dolor, non incidunt soluta reprehenderit ad maiores,
+              quaerat molestiae eveniet libero ratione, magni temporibus! Totam
+              sed, inventore rerum voluptates quisquam repudiandae.
+            </p>
+          </div>
+          <div class="bg-white p-x-1 p-y-1">
+            <img src="https://via.placeholder.com/300" />
+            <h3>project two</h3>
+            <ul>
+              <li><a href="#">Live</a></li>
+              <li><a href="#">Repo</a></li>
+            </ul>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatum dolor, non incidunt soluta reprehenderit ad maiores,
+              quaerat molestiae eveniet libero ratione, magni temporibus! Totam
+              sed, inventore rerum voluptates quisquam repudiandae.
+            </p>
+          </div>
         </div>
       </section>
       <section
@@ -87,14 +122,32 @@
         <div
           class="d-flex flex-column gap-3 align-items-center justify-content-center bg-white p-x-1 p-y-1"
         >
-          <p>Want to develop a website with me? Let's get in touch.</p>
-          <a href="mailto:roaa.alsughair0@gmail.com"
-            ><button class="p-x-2 p-y-1">Email me!</button></a
-          >
+          <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" />
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" />
+
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" />
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message"></textarea>
+
+            <button class="p-x-2 p-y-1" type="submit">Send</button>
+          </form>
         </div>
       </section>
     </main>
     <!-- Make the copyright date static for versioning -->
-    <footer class="text-center p-y-1">Roa'a AlSughair &copy;2022</footer>
+    <footer class="text-center p-y-1">
+      <p>Roa'a AlSughair &copy;2022</p>
+      <ul>
+        <li><a href="#">LinkedIn</a></li>
+        <a href="#">GitHub</a>
+        <li></li>
+      </ul>
+    </footer>
   </body>
 </html>
