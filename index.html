@@ -26,12 +26,9 @@
       <section
         class="hero d-flex flex-column gap-3 align-items-center justify-content-center"
       >
-        <b><p>Hi, I'm</p></b>
-        <h1>Roa'a AlSughair</h1>
-        <b><p>and I'm a</p></b>
-        <h1>Full-Stack Developer</h1>
+        <h1>Hi, I am <span>Roa'a AlSughair</span> and I am a <span>Full-Stack Developer</span></h1>
         <a href="#works">
-          <button class="p-x-2 p-y-1">Show Me</button>
+          <button class="p-x-2 p-y-1">My Works</button>
         </a>
       </section>
       <section
@@ -39,26 +36,30 @@
         class="d-flex flex-column gap-3 align-items-center justify-content-center"
       >
         <div>
-          <article
+          <div
             class="d-flex flex-column gap-3 align-items-center justify-content-center"
           >
             <h2>About Me</h2>
-            <img src="./assets/My Img-1.png" height="150" width="150" />
-            <p>
-              I am a full-stack developer. I enjoy building web applications
-              that implement back-end front-end, and database technologies. I
-              seek job opportunities where I can improve and sharpen my skills
-              to reach greater levels of proficiency in my field.
-            </p>
-            <a href="./assets/Roa'a AlSughair.pdf" download=""
-              ><button class="p-x-2 p-y-1">Download Resume</button></a
-            >
-          </article>
+            <div class="d-flex gap-3">
+              <img src="./assets/My Img-1.png" height="150" width="150" />
+              <div class="d-flex flex-column gap-3">
+                <p>
+                  I am a full-stack developer. I enjoy building web applications
+                  that implement back-end front-end, and database technologies.
+                  I seek job opportunities where I can improve and sharpen my
+                  skills to reach greater levels of proficiency in my field.
+                </p>
+                <a href="./assets/Roa'a AlSughair.pdf" download=""
+                  ><button class="p-x-2 p-y-1">Download Resume</button></a
+                >
+              </div>
+            </div>
+          </div>
         </div>
         <article
           class="d-flex flex-column gap-3 align-items-center justify-content-center"
         >
-          <h2>Skills</h2>
+          <h2>Skills & Experience</h2>
           <!-- Technical, Industry Knowledge, and Interpersonal Skills -->
           <ul>
             <li>JavaScript, PHP</li>
@@ -122,10 +123,24 @@
         <form
           class="d-flex flex-column gap-1 justify-content-center bg-white p-x-2 p-y-2"
         >
-          <input class="p-x-1 p-y-1" type="text" id="name" placeholder="Name"/>
-          <input class="p-x-1 p-y-1" type="email" id="email" placeholder="Email"/>
-          <input class="p-x-1 p-y-1" type="text" id="subject" placeholder="Subject"/>
-          <textarea class="p-x-1 p-y-1" id="message" placeholder="Message"></textarea>
+          <input class="p-x-1 p-y-1" type="text" id="name" placeholder="Name" />
+          <input
+            class="p-x-1 p-y-1"
+            type="email"
+            id="email"
+            placeholder="Email"
+          />
+          <input
+            class="p-x-1 p-y-1"
+            type="text"
+            id="subject"
+            placeholder="Subject"
+          />
+          <textarea
+            class="p-x-1 p-y-1"
+            id="message"
+            placeholder="Message"
+          ></textarea>
 
           <button class="p-x-2 p-y-1" type="submit">Send</button>
         </form>
