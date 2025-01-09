@@ -31,15 +31,11 @@ a:hover {
   color: #fdb827;
 }
 
-a, button {
-  font-weight: 600;
-}
-
 button {
   background-color: #23120b;
   color: white;
   border: none;
-  /* box-shadow: 1px 1px 2px #fdb827; */
+  font-size: 1rem;
 }
 
 button:hover {
@@ -62,9 +58,13 @@ h1 {
 }
 
 span {
-  /* font-size: 4rem; */
   color: #fdb827;
   text-shadow: 1px 1px #23120b;
+}
+
+p {
+  font-size: 1.25rem;
+  line-height: 1.5;
 }
 
 .bg-white {
@@ -144,11 +144,6 @@ section {
   min-height: 100vh;
   width: 100%;
   margin-bottom: 5rem;
-}
-
-.hero {
-  width: 100%;
-  text-align: center;
 }
 
 main {
