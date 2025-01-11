@@ -36,6 +36,7 @@ button {
   background-color: #23120b;
   color: white;
   border: none;
+  border-radius: 4px;
   font-size: 1rem;
 }
 
@@ -112,9 +113,14 @@ img {
   grid-template-columns: 1fr 1fr;
 }
 
-.project {
+.project, .contact-me {
   border-radius: 8px;
   box-shadow: 1px 1px 2px 1px rgba(148, 141, 138, 0.3);
+}
+
+.contact-me {
+  width: fit-content;
+  height: fit-content;
 }
 
 .project-img {
@@ -167,10 +173,6 @@ section {
 
 main {
   background-color: #f1f1f1;
-}
-
-form {
-  width: 50%;
 }
 
 footer {
