@@ -181,16 +181,38 @@ footer {
   /* opacity: 0.9; */
 }
 
-@media (max-width: 500px) {
+@media (max-width: 769px) {
+  .about-me {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .buttons {
+    align-items: center;
+    justify-content: center;
+  }
+
   .projects {
     grid-template-columns: 1fr;
   }
 
-  nav ul {
+  .project {
+    text-align: center;
+  }
+
+  nav ul, nav ul a {
     display: none;
   }
 
-  form {
-    width: 80%;
+}
+
+@media (max-width: 426px) {
+  .buttons {
+    flex-direction: column;
+  }
+
+  .project-links-and-title {
+    flex-direction: column;
+    justify-content: center;
   }
 }
