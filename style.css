@@ -6,6 +6,7 @@
 
 html {
   scroll-behavior: smooth;
+  font-size: 16px;
 }
 
 body {
@@ -67,6 +68,10 @@ p {
   line-height: 1.5;
 }
 
+img {
+  border-radius: 4px;
+}
+
 .bg-white {
   background-color: white;
 }
@@ -107,6 +112,16 @@ p {
   grid-template-columns: 1fr 1fr;
 }
 
+.project {
+  border-radius: 8px;
+  box-shadow: 1px 1px 2px 1px rgba(148, 141, 138, 0.3);
+}
+
+.project-img {
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -133,6 +148,10 @@ p {
 
 .gap-1 {
   gap: 1rem;
+}
+
+.gap-2 {
+  gap: 2rem;
 }
 
 .gap-3 {
