@@ -69,6 +69,16 @@ p {
   line-height: 1.5;
 }
 
+figure {
+  width: fit-content;
+}
+
+figcaption {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
 img {
   border-radius: 4px;
 }
@@ -109,6 +119,10 @@ img {
   align-items: center;
 }
 
+.align-items-baseline {
+  align-items: baseline;
+}
+
 .projects {
   grid-template-columns: 1fr 1fr;
 }
@@ -125,6 +139,10 @@ img {
 
 .project-img {
   width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.desc {
   margin-bottom: 1.5rem;
 }
 
