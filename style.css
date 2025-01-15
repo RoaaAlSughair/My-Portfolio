@@ -83,6 +83,10 @@ img {
   border-radius: 4px;
 }
 
+li {
+  list-style-type: none;
+}
+
 .bg-white {
   background-color: white;
 }
@@ -144,6 +148,10 @@ img {
 
 .desc {
   margin-bottom: 1.5rem;
+}
+
+.tech-icons {
+  flex-wrap: wrap;
 }
 
 .text-center {
@@ -213,18 +221,21 @@ footer {
   .projects {
     grid-template-columns: 1fr;
   }
+}
+
+@media (max-width: 426px) {
+  nav ul, nav ul a {
+    display: none;
+  }
 
   .project {
     text-align: center;
   }
 
-  nav ul, nav ul a {
-    display: none;
+  .tech-icons {
+    justify-content: center;
   }
 
-}
-
-@media (max-width: 426px) {
   .buttons {
     flex-direction: column;
   }
