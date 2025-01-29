@@ -19,12 +19,25 @@
       class="d-flex flex-row justify-content-between align-items-center p-x-2"
     >
       <img src="./assets/Logo.png" />
-      <ul class="d-flex flex-row justify-content-end p-y-1 gap-3">
+      <label for="menu-toggle" class="menu-icon" >
+        <img src="./assets/Icons/Menu.png" />
+      </label>
+      <ul class="navigation d-flex flex-row justify-content-end p-y-1 gap-3">
         <li><a href="#about">About</a></li>
         <li><a href="#works">Works</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
+    <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+    <div class="mobile-menu">
+      <ul
+        class="d-flex flex-column justify-content-center align-items-center p-y-1 gap-3"
+      >
+        <li><a href="#about">About</a></li>
+        <li><a href="#works">Works</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
     <main
       class="d-flex flex-column align-items-center justify-content-center p-x-2"
     >
@@ -81,7 +94,7 @@
         <div
           class="project bg-white p-x-2 p-y-2 d-flex flex-column justify-content-between"
         >
-          <img class="project-img" src="./assets/GrabOne.png" />
+          <img class="project-img" src="./assets/GrabOne.jpeg" />
           <div
             class="project-links-and-title d-flex justify-content-between align-items-center gap-1"
           >

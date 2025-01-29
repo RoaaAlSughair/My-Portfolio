@@ -26,6 +26,7 @@ a {
   text-decoration: none;
   color: #f1f1f1;
   font-family: "Open Sans", sans-serif;
+  display: inherit;
 }
 
 a:hover {
@@ -127,6 +128,14 @@ li {
   align-items: baseline;
 }
 
+.mobile-menu {
+  display: none;
+}
+
+.menu-icon, .menu-toggle {
+  display: none;
+}
+
 .projects {
   grid-template-columns: 1fr 1fr;
 }
@@ -208,6 +217,10 @@ footer {
 }
 
 @media (max-width: 769px) {
+  .navigation {
+    gap: 2rem;
+  }
+
   .about-me {
     flex-direction: column;
     text-align: center;
@@ -224,8 +237,18 @@ footer {
 }
 
 @media (max-width: 426px) {
-  nav ul, nav ul a {
+  .navigation {
     display: none;
+  }
+
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  #menu-toggle:checked ~ .mobile-menu {
+    display: flex;
+    background-color: #23120b;
   }
 
   .project {
