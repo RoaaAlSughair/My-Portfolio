@@ -161,6 +161,7 @@ li {
 
 .tech-icons {
   flex-wrap: wrap;
+  margin-top: auto;
 }
 
 .text-center {
