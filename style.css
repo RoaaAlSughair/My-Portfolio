@@ -148,6 +148,16 @@ li {
 .contact-me {
   width: fit-content;
   height: fit-content;
+  padding-right: 3rem;
+  padding-left: 3rem;
+}
+
+.contact-me h2 {
+  margin-bottom: 3rem;
+}
+
+.social-media {
+  margin-bottom: 1rem;
 }
 
 .project-img {
@@ -267,5 +277,11 @@ footer {
   .project-links-and-title {
     flex-direction: column;
     justify-content: center;
+  }
+
+  .contact-me {
+    padding-right: 2rem;
+    padding-left: 2rem;
+    width: 100%;
   }
 }
