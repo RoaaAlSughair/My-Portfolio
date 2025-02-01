@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  font-family: "Crimson Text", serif;
+  font-family: 'Crimson Text', serif;
 }
 
 nav {
@@ -24,7 +24,7 @@ nav {
 a {
   text-decoration: none;
   color: #f1f1f1;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   display: inherit;
 }
 
@@ -51,7 +51,7 @@ h2,
 h3,
 h4 {
   color: #23120b;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: bold;
 }
 
@@ -71,9 +71,17 @@ p {
 
 section {
   color: #23120b;
-  min-height: 100vh;
   width: 100%;
-  margin-bottom: 5rem;
+}
+
+section:has(.about-me) {
+  min-height: 100vh;
+  align-items: center;
+}
+
+section:has(.contact-me) {
+  min-height: 100vh;
+  align-items: center;
 }
 
 figure {
@@ -81,7 +89,7 @@ figure {
 }
 
 figcaption {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 0.75rem;
   font-weight: 600;
 }
@@ -96,6 +104,8 @@ li {
 
 main {
   background-color: #f1f1f1;
+  padding-top: 12.5%;
+  padding-bottom: 12.5%;
 }
 
 footer {
@@ -183,15 +193,31 @@ footer {
   display: none;
 }
 
-.menu-icon, .menu-toggle {
+.menu-icon,
+.menu-toggle {
   display: none;
+}
+
+.about-me {
+  img {
+    width: 250px;
+    height: 250px;
+    aspect-ratio: 1/1;
+  }
+}
+
+.buttons {
+  margin-top: auto;
+  flex-wrap: wrap;
 }
 
 .projects {
   grid-template-columns: 1fr 1fr;
 }
 
-.project, .contact-me {
+.about-me,
+.project,
+.contact-me {
   border-radius: 8px;
   box-shadow: 1px 1px 2px 1px rgba(148, 141, 138, 0.3);
 }
@@ -214,6 +240,7 @@ footer {
 .project-img {
   width: 100%;
   margin-bottom: 1.5rem;
+  aspect-ratio: 16/9;
 }
 
 .desc {
@@ -233,15 +260,21 @@ footer {
   .about-me {
     flex-direction: column;
     text-align: center;
+    align-items: center;
   }
 
   .buttons {
     align-items: center;
     justify-content: center;
+    gap: 1.5rem;
   }
 
   .projects {
     grid-template-columns: 1fr;
+  }
+
+  .contact-me {
+    width: 100%;
   }
 }
 
@@ -268,10 +301,6 @@ footer {
     justify-content: center;
   }
 
-  .buttons {
-    flex-direction: column;
-  }
-
   .project-links-and-title {
     flex-direction: column;
     justify-content: center;
@@ -280,6 +309,5 @@ footer {
   .contact-me {
     padding-right: 2rem;
     padding-left: 2rem;
-    width: 100%;
   }
 }
