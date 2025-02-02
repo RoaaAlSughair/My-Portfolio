@@ -191,11 +191,32 @@ footer {
 
 .mobile-menu {
   display: none;
+  position: fixed;
+  justify-content: center;
+  align-items: start;
+  top: 40px;
+  right: 0;
+  width: 50%;
+  height: 100vh;
+  background-color: #23120b;
+  transform: translateX(100%);
+  z-index: 2;
 }
 
 .menu-icon,
 .menu-toggle {
   display: none;
+}
+
+.menu-overlay {
+  display: none;
+  position: fixed;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
 }
 
 .about-me {
@@ -290,7 +311,12 @@ footer {
 
   #menu-toggle:checked ~ .mobile-menu {
     display: flex;
-    background-color: #23120b;
+    transform: translateX(0);
+    /* transition: transform 1s ease-in-out; */
+  }
+
+  #menu-toggle:checked ~ .menu-overlay {
+    display: block;
   }
 
   .project {
