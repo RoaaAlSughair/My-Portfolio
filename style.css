@@ -72,16 +72,7 @@ p {
 section {
   color: #23120b;
   width: 100%;
-}
-
-section:has(.about-me) {
-  min-height: 100vh;
-  align-items: center;
-}
-
-section:has(.contact-me) {
-  min-height: 100vh;
-  align-items: center;
+  margin-bottom: 5rem;
 }
 
 figure {
@@ -104,8 +95,7 @@ li {
 
 main {
   background-color: #f1f1f1;
-  padding-top: 12.5%;
-  padding-bottom: 12.5%;
+  padding: 5rem 2rem;
 }
 
 footer {
@@ -190,7 +180,7 @@ footer {
 }
 
 .mobile-menu {
-  display: none;
+  display: flex;
   position: fixed;
   justify-content: center;
   align-items: start;
@@ -200,6 +190,8 @@ footer {
   height: 100vh;
   background-color: #23120b;
   transform: translateX(100%);
+  transition: all 0.2s ease-in-out;
+  visibility: hidden;
   z-index: 2;
 }
 
@@ -236,6 +228,11 @@ footer {
   grid-template-columns: 1fr 1fr;
 }
 
+.project {
+  padding: 2.5rem;
+  gap: 2rem;
+}
+
 .about-me,
 .project,
 .contact-me {
@@ -248,10 +245,10 @@ footer {
   height: fit-content;
   padding-right: 3rem;
   padding-left: 3rem;
-}
 
-.contact-me h2 {
-  margin-bottom: 3rem;
+  h2 {
+    margin-bottom: 3rem;
+  }
 }
 
 .social-media {
@@ -310,13 +307,20 @@ footer {
   }
 
   #menu-toggle:checked ~ .mobile-menu {
-    display: flex;
     transform: translateX(0);
-    /* transition: transform 1s ease-in-out; */
+    visibility: visible;
   }
 
   #menu-toggle:checked ~ .menu-overlay {
     display: block;
+  }
+
+  main {
+    padding: 3rem 1rem;
+  }
+
+  section {
+    margin-bottom: 3rem;
   }
 
   .project {
